@@ -1,0 +1,25 @@
+body {
+	background-color: #D3CBBD;
+	color: #403D3C;
+}
+
+a {
+	color: #403D3C;
+}
+
+main *:not(header):not(h1):not(h2) > a[href]:hover, main a[href]:active {
+    background-color: #E7E2DA;
+}
+
+a[href]:hover, a[href]:active {
+	color: #EB5937;
+}
+
+#page > div#more {
+	color: #716C67;
+}
+
+article > footer {
+	color: #716C67;
+	border-top: 2px dotted #A29C92;
+}

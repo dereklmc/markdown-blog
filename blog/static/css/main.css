@@ -1,0 +1,159 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    width: 800px;
+    margin: 0px;
+}
+
+#page > header {
+    order: 0;
+    flex: 1;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#page > .small-flourish {
+    transform: rotate(90deg);
+    align-self: center;
+    flex: 0 1 auto;
+}
+
+#page > #break {
+    order: 1;
+    display: none;
+}
+
+#page > #more {
+    order: 2;
+    display: none;
+    margin: 25px;
+}
+
+#page > main {
+    order: 3;
+    flex: 4;
+    align-self: auto;
+    margin: 20px;
+    padding: 10px;
+}
+
+img#logo {
+    display: block;
+    margin: 0px 30px;
+}
+
+h1#page-title {
+    margin: 30px;
+}
+
+nav {
+    margin: 10px 0px;
+    width: 100%;
+}
+
+address {
+    margin-top: 50px;
+}
+
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+}
+
+nav > ul > li {
+    margin: 5px 0px;
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    height: 25px;
+    padding: 10px;
+}
+
+article > p:first-child {
+    margin-top: 0px;
+}
+
+article {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Too narrow */
+@media all and (max-width: 800px) {
+    #page {
+        width: 100%;
+    }
+}
+
+/* Too narrow */
+@media all and (max-width: 640px) {
+    #page {
+        flex-direction: column;
+        min-width: 0px;
+    }
+
+    #page > header {
+        padding: 20px 0px;
+        flex: 0 auto;
+    }
+
+    img#logo {
+        display: none;
+    }
+
+    h1#page-title {
+        margin: 0px;
+    }
+
+    address {
+        margin-top: 10px;
+    }
+
+    #page > #break {
+        display: block;
+    }
+
+    #page > main {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #page > main p {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/* Too narrow */
+@media all and (max-height: 480px) {
+    #page > #more {
+        display: block;
+    }
+}

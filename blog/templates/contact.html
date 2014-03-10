@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}Contact{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    #contacts ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    #contacts li {
+        margin: 1em 0px;
+    }
+    #contacts a {
+        margin-left: 2em
+    }
+  </style>
+{% endblock %}
+{% block content %}
+<article id="contacts">
+    <h2>Contact</h2>
+    <ul>
+        <li>
+            Email:<a href="mailto:derek.l.mclean@gmail.com">derek.l.mclean@gmail.com</a>
+        </li>
+        <li>
+            Google+:<a href="google.com/+DerekMcLeanPlus">+DerekMcLeanPlus</a>
+        </li>
+    </ul> 
+    <footer>
+    </footer>
+</article>
+{% endblock %}

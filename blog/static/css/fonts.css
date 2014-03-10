@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|PT+Sans:400,700|PT+Serif:400,400italic|Vollkorn:400italic);
+
+h1, h2, h3, h4, h5 {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+header h1 {
+	font-size: xx-large;
+}
+
+a {
+	font-family: 'PT Sans', sans-serif;
+	text-decoration: none;
+}
+
+nav a {
+	font-weight: bold;
+}
+
+body {
+	font-family: 'PT Serif', serif;
+	font-size: larger;
+}
+
+div#break {
+	font-size: xx-large;
+}
+
+#page > #more {
+	font-size: 48px;
+}
+
+article > footer {
+	text-align: right;
+}
+
+blockquote {
+	font-family: 'Vollkorn', serif;
+	font-style: italic;
+}
+
+/* Too narrow */
+@media all and (max-height: 480px) {
+	nav a {
+		font-size: larger;
+	}
+}

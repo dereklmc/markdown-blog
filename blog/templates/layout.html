@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+{% block head %}
+    <meta charset="utf-8">
+    <title>Derek Mclean: {% block title %}{% endblock %}</title>
+    <link type="text/css" rel="stylesheet" href="../static/css/main.css" />
+    <!--<link type="text/css" rel="stylesheet" href="../static/css/webkit.css" />-->
+    <!-- Dark Theme -->
+    <link type="text/css" rel="stylesheet" href="../static/css/light-colors.css" />
+    <!-- Light Theme -->
+    <link type="text/css" rel="stylesheet" href="../static/css/fonts.css" />
+{% endblock %}
+</head>
+<body>
+    <div id="page"><header>
+            <img id="logo" src="/static/images/icon_1026.svg" />
+            <h1 id="page-title">
+                Derek McLean
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/archive">Archive</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+            </nav>
+        </header>
+        <div id="break" class="small-flourish">§</div>
+        <div id="more" class="small-flourish">➽</div>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+</body>
+</html>

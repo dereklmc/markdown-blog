@@ -1,0 +1,31 @@
+{% extends "layout.html" %}% block head %}
+{% block title %}Archive{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    p.post {
+        margin: 0.5em;
+    }
+    p.post:hover {
+        background-color: #E7E2DA;
+    }
+    time {
+        float: right;
+        color: #716C67;
+        font-size: smaller;
+    }
+  </style>
+{% endblock %}
+{% block content %}
+<article>
+    <header><h1>Archive</h1></header>
+{% for post in posts %}
+    <p class="post">
+        <a href=" {{ url_for('post', name=post.path.replace('posts/', '')) }}">
+            {{ post.title }}
+        </a>
+        <time>{{ post.date }}</time>
+    </p>
+{% endfor %}
+</article>
+{% endblock %}
